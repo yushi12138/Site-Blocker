@@ -1,0 +1,29 @@
+{
+  "name": "Yu's Site Blocker",
+  "version": "1.0",
+  "description": "Block distracting website",
+  "permissions": [
+    "activeTab", 
+    "declarativeContent",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "<all_urls>"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "icons": {
+    "16": "images/yu_16.png",
+    "128": "images/yu_128.png"
+  },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/yu_16.png"
+  }
+}
